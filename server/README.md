@@ -10,6 +10,8 @@ Currently, two official plugins are available:
 
 -   [django-cors-headers](https://github.com/adamchainz/django-cors-headers) Django app for handling the server headers required for Cross-Origin Resource Sharing (CORS) ⚙️
 
+-   [python-dotenv](https://github.com/theskumar/python-dotenv) - Reads key-value pairs from a `.env` file and can set them as environment variables. It helps in developing applications following the 12-factor principles. ⚙️
+
 ## Getting Started
 
 Create a new environment
