@@ -10,7 +10,9 @@ Currently, two official plugins are available:
 
 -   [django-cors-headers](https://github.com/adamchainz/django-cors-headers) Django app for handling the server headers required for Cross-Origin Resource Sharing (CORS) ⚙️
 
--   [python-dotenv](https://github.com/theskumar/python-dotenv) - Reads key-value pairs from a `.env` file and can set them as environment variables. It helps in developing applications following the 12-factor principles. ⚙️
+-   [python-dotenv](https://github.com/theskumar/python-dotenv) Reads key-value pairs from a `.env` file and can set them as environment variables. It helps in developing applications following the 12-factor principles. ⚙️
+
+-   [Pillow](https://github.com/python-pillow/Pillow) Python Imaging Library (Fork) 🎑
 
 ## Getting Started
 
@@ -32,7 +34,7 @@ Install from file requirements.txt
 pip install -r requirements.txt
 ```
 
-### Migrate
+Migrate
 
 ```bash
 py manage.py makemigrations
@@ -49,4 +51,10 @@ Create superuser
 
 ```bash
 py manage.py createsuperuser
+```
+
+Create `.env` file
+
+```bash
+SECRET_KEY=your_secret_key
 ```
