@@ -14,6 +14,8 @@ Currently, two official plugins are available:
 
 -   [Pillow](https://github.com/python-pillow/Pillow) Python Imaging Library (Fork) 🎑
 
+-   [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar/) A configurable set of panels that display various debug information about the current request/response. 🔍🐛
+
 ## Getting Started
 
 Create a new environment
