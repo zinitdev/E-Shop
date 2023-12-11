@@ -12,6 +12,10 @@ Currently, two official plugins are available:
 
 -   [swr](https://github.com/vercel/swr) React Hooks for Data Fetching 🌊
 
+-   [react-icons](https://github.com/react-icons/react-icons) SVG react icons of popular icon packs 🦄
+
+-   [react-router](https://github.com/remix-run/react-router) Declarative routing for React 🎠
+
 ## Getting Started
 
 Install dependencies
