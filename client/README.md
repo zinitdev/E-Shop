@@ -8,7 +8,9 @@ Currently, two official plugins are available:
 
 -   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh ⚡
 
--   [axios](https://github.com/axios/axios) 🅰
+-   [axios](https://github.com/axios/axios) Promise based HTTP client for the browser and node.js 🅰
+
+-   [swr](https://github.com/vercel/swr) React Hooks for Data Fetching 🌊
 
 ## Getting Started
 

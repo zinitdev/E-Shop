@@ -1,13 +1,32 @@
-from rest_framework import permissions, viewsets
-from .serializers import GroupSerializer, UserSerializer, CategorySerializer, ProductSerializer
+from rest_framework import permissions, viewsets, status
+from rest_framework.response import Response
+from .serializers import (
+    GroupSerializer,
+    UserSerializer,
+    CategorySerializer,
+    ProductSerializer,
+)
 from . import dao
-from rest_framework import generics
 
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = dao.load_users()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            self.perform_create(serializer)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    # def get_permissions(self):
+    #     if self.action == "create":
+    #         permission_classes = [permissions.AllowAny]
+    #     else:
+    #         permission_classes = [permissions.IsAuthenticated]
+        
+    #     return [permission() for permission in permission_classes]
 
 
 class GroupViewSet(viewsets.ModelViewSet):

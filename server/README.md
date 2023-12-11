@@ -16,6 +16,10 @@ Currently, two official plugins are available:
 
 -   [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar/) A configurable set of panels that display various debug information about the current request/response. 🔍🐛
 
+-   [djangorestframework-simplejwt](https://github.com/jazzband/djangorestframework-simplejwt) A JSON Web Token authentication plugin for the Django REST Framework. 🩹
+
+-   [drf-yasg](https://github.com/axnsan12/drf-yasg/) Automated generation of real Swagger/OpenAPI 2.0 schemas from Django REST Framework code. ⌛
+
 ## Getting Started
 
 Create a new environment
