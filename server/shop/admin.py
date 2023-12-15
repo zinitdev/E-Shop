@@ -5,7 +5,7 @@ from django.db.models import Value
 from django.db.models.functions import Concat
 from django.contrib.auth.models import Permission
 from .actions import *
-
+from .forms import ProductAdminForm
 
 class UserAdmin(admin.ModelAdmin):
     list_editable = ["is_active"]
@@ -71,6 +71,8 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class ProductAdmin(admin.ModelAdmin):
+    form = ProductAdminForm
+    
     list_editable = ["is_active"]
     date_hierarchy = "created_at"
     list_display = [

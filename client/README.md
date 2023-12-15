@@ -2,7 +2,7 @@
 
 Front-End with React + Vite ⚡
 
-Currently, 10 official plugins are available:
+Currently, 12 official plugins are available:
 
 -   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh ⚡
 

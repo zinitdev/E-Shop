@@ -2,7 +2,7 @@
 
 Back-End with Django 🚀
 
-Currently, 8 official plugins are available:
+Currently, 10 official plugins are available:
 
 -   [django](https://github.com/django/django) The Web framework for perfectionists with deadlines 🚀
 
@@ -19,6 +19,10 @@ Currently, 8 official plugins are available:
 -   [djangorestframework-simplejwt](https://github.com/jazzband/djangorestframework-simplejwt) A JSON Web Token authentication plugin for the Django REST Framework. 🩹
 
 -   [drf-yasg](https://github.com/axnsan12/drf-yasg/) Automated generation of real Swagger/OpenAPI 2.0 schemas from Django REST Framework code. ⌛
+
+-   [django-cloudinary-storage](https://github.com/klis87/django-cloudinary-storage) Django package that provides Cloudinary storages for both media and static files as well as management commands for removing unnecessary files ☁
+
+-   [django-ckeditor](https://github.com/django-ckeditor/django-ckeditor) Django admin CKEditor integration 🎛
 
 ## Getting Started
 
@@ -63,4 +67,7 @@ Create `.env` file
 
 ```bash
 SECRET_KEY=your_secret_key
+CLOUD_NAME=dkxrskglz
+API_KEY=332831673582871
+API_SECRET=WAT9JLLTzXH4EmQ4WyiyFpzxlas
 ```

@@ -41,10 +41,14 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "cloudinary_storage",
+    "cloudinary",
     "drf_yasg",
     "rest_framework",
     "rest_framework_simplejwt",
     "corsheaders",
+    "ckeditor",
+    "ckeditor_uploader",
     "shop.apps.ShopConfig",
     "debug_toolbar",
 ]
@@ -135,6 +139,12 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+MEDIA_URL = "/media/"
+
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -200,4 +210,21 @@ SWAGGER_SETTINGS = {
     "SECURITY_DEFINITIONS": {
         "Token": {"type": "apiKey", "name": "Authorization", "in": "header"}
     },
+}
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_CONFIGS = {
+    "default": {
+        "toolbar": "full",
+        "tabSpaces": 4,
+    },
+}
+
+
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": os.environ.get("CLOUD_NAME"),
+    "API_KEY": os.environ.get("API_KEY"),
+    "API_SECRET": os.environ.get("API_SECRET"),
 }

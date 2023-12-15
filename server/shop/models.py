@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from ckeditor.fields import RichTextField
 
 
 class User(AbstractUser):
@@ -41,10 +42,11 @@ class Category(CommonModel):
 
 class Product(CommonModel):
     name = models.CharField(max_length=100)
-    description = models.TextField(
+    description = RichTextField(
         null=True,
         blank=True,
         help_text="Description about the product.",
+        config_name='default', 
     )
     price = models.FloatField(default=0.00, help_text="Price for this product.")
     category = models.ForeignKey(
