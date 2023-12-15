@@ -2,7 +2,7 @@
 
 Front-End with React + Vite ⚡
 
-Currently, two official plugins are available:
+Currently, 10 official plugins are available:
 
 -   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh ⚡
 
@@ -23,6 +23,10 @@ Currently, two official plugins are available:
 -   [autoprefixer](https://github.com/postcss/autoprefixer) Parse CSS and add vendor prefixes to rules by Can I Use 👽
 
 -   [postcss](https://github.com/postcss/postcss) Transforming styles with JS plugins 🤖
+
+-   [sass](https://github.com/sass/sass) Sass makes CSS fun ❤️‍🔥
+
+-   [vite-plugin-windicss](https://github.com/postcss/postcss) Windi CSS for Vite ⚡️
 
 ## Getting Started
 

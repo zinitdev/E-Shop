@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom'
 import RootLayout from '@/components/layouts/RootLayout'
 import { paths } from '@/routes/routes'
 import { Suspense } from 'react'
-import '@/styles/globals.css'
 
 const App = () => {
     return (

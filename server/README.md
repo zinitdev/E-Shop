@@ -2,7 +2,7 @@
 
 Back-End with Django 🚀
 
-Currently, two official plugins are available:
+Currently, 8 official plugins are available:
 
 -   [django](https://github.com/django/django) The Web framework for perfectionists with deadlines 🚀
 
