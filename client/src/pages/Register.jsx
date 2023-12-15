@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
-import { mutate } from 'swr'
+import APIs from '../api'
 
 export default function Register() {
     const [formData, setFormData] = useState({
@@ -15,25 +14,17 @@ export default function Register() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        try {
-            const response = await axios.post(
-                'http://localhost:8000/users/',
-                formData,
-                { timeout: 3000 }
-            )
-            mutate('http://localhost:8000/users/')
-            console.log('Registration successful:', response.data)
-        } catch (error) {
-            if (axios.isCancel(error)) {
-                console.log('Request timeout')
-            } else {
-                console.error('Registration failed:', error)
-            }
-        }
+        APIs.authAPI.registerUser(formData)
+            .then((response) => {
+                console.log('Registration successful', response.data)
+            })
+            .catch((error) => {
+                console.error('Error registering:', error)
+            })
     }
 
     return (
-        <div>
+        <div className="mt-32">
             <h2>Đăng ký</h2>
             <form onSubmit={handleSubmit}>
                 <input
