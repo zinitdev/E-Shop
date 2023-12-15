@@ -1,36 +1,36 @@
-import { useState } from "react";
-import axios from "axios";
-import { mutate } from "swr";
+import { useState } from 'react'
+import axios from 'axios'
+import { mutate } from 'swr'
 
 export default function Register() {
     const [formData, setFormData] = useState({
-        username: "",
-        email: "",
-        password: "",
-    });
+        username: '',
+        email: '',
+        password: '',
+    })
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+    }
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        e.preventDefault()
         try {
             const response = await axios.post(
-                "http://localhost:8000/users/",
+                'http://localhost:8000/users/',
                 formData,
                 { timeout: 3000 }
-            );
-            mutate("http://localhost:8000/users/");
-            console.log("Registration successful:", response.data);
+            )
+            mutate('http://localhost:8000/users/')
+            console.log('Registration successful:', response.data)
         } catch (error) {
             if (axios.isCancel(error)) {
-                console.log("Request timeout");
+                console.log('Request timeout')
             } else {
-                console.error("Registration failed:", error);
+                console.error('Registration failed:', error)
             }
         }
-    };
+    }
 
     return (
         <div>
@@ -57,5 +57,5 @@ export default function Register() {
                 <button type="submit">Đăng ký</button>
             </form>
         </div>
-    );
+    )
 }

@@ -1,15 +1,15 @@
-import { Route, Routes } from "react-router-dom";
-import RootLayout from "@/components/layouts/RootLayout";
-import { paths } from "@/routes/routes";
-import { Suspense } from "react";
-import "@/styles/globals.css";
+import { Route, Routes } from 'react-router-dom'
+import RootLayout from '@/components/layouts/RootLayout'
+import { paths } from '@/routes/routes'
+import { Suspense } from 'react'
+import '@/styles/globals.css'
 
 const App = () => {
     return (
         <Routes>
             <Route element={<RootLayout />}>
                 {paths.map((router, index) => {
-                    const Page = router.component;
+                    const Page = router.component
                     return (
                         <Route
                             key={index}
@@ -20,11 +20,11 @@ const App = () => {
                                 </Suspense>
                             }
                         />
-                    );
+                    )
                 })}
             </Route>
         </Routes>
-    );
-};
+    )
+}
 
-export default App;
+export default App

@@ -16,6 +16,14 @@ Currently, two official plugins are available:
 
 -   [react-router](https://github.com/remix-run/react-router) Declarative routing for React 🎠
 
+-   [prettier](https://github.com/prettier/prettier) Prettier is an opinionated code formatter 💀
+
+-   [tailwindcss](https://github.com/tailwindlabs/tailwindcss) A utility-first CSS framework for rapid UI development 🌊
+
+-   [autoprefixer](https://github.com/postcss/autoprefixer) Parse CSS and add vendor prefixes to rules by Can I Use 👽
+
+-   [postcss](https://github.com/postcss/postcss) Transforming styles with JS plugins 🤖
+
 ## Getting Started
 
 Install dependencies

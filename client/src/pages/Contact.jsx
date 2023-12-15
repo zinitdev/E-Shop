@@ -1,3 +1,3 @@
 export default function Contact() {
-    return <div>Liên Hệ</div>;
+    return <div>Liên Hệ</div>
 }
